@@ -1,0 +1,191 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Gradasi pastel untuk seluruh halaman */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    to right,
+    #f7c6d3,
+    #e4b9e4,
+    #e0e0e0,
+    #ffffff
+  ); /* Gradasi pastel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Halaman login */
+.login-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #ff80ab;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #ff80ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Halaman portofolio */
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  flex-direction: column;
+}
+
+.portfolio-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Marquee */
+.marquee-container {
+  margin-bottom: 20px;
+}
+
+.marquee-text {
+  font-size: 26px;
+  color: #ffb3c6;
+  font-weight: bold;
+}
+
+/* Foto profil */
+.profile {
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 250px; /* Ukuran baru untuk foto profil */
+  height: 250px; /* Ukuran baru untuk foto profil */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  margin-bottom: 50px;
+  border: 5px solid #f7c6d3;
+  object-fit: cover; /* Menjaga agar gambar tetap proporsional dan mengisi area */
+  display: block; /* Menjadikan gambar sebagai block element */
+  margin-left: auto; /* Mengatur margin kiri otomatis */
+  margin-right: auto; /* Mengatur margin kanan otomatis */
+}
+
+h1 {
+  font-size: 40px;
+  color: #ff80ab;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling kotak untuk Kontak, Pendidikan, Pengalaman, Keahlian */
+h2 {
+  font-size: 24px;
+  color: #8a7fd3;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #ff80ab;
+}
+
+a {
+  color: #8a7fd3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Background untuk bagian Pengalaman, Kontak, Pendidikan, Keahlian */
+.contact-info,
+.education-info,
+.experience-info,
+.skills-info {
+  background-color: #f7e1e8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-info,
+.education-info,
+.experience-info,
+.skills-info {
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover,
+.education-info:hover,
+.experience-info:hover,
+.skills-info:hover {
+  transform: scale(1.05);
+}
+
+/* Animasi zoom */
+.skills-info {
+  background-color: #f7e1e8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
